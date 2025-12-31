@@ -1,0 +1,5 @@
+<div>
+    <div class="center title">List of Products</div>
+    <app-product-search (searchEvent)="UpdateSearchFilterValue($event)"></app-product-search>
+    <app-productlist [searchValue]="searchValue"></app-productlist>
+</div>

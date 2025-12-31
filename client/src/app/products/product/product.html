@@ -1,0 +1,6 @@
+<div class="card" (click)="onProductClick(product.id)">
+    <label class="hide">Product Id: {{product.id}}</label>
+    <h3>Product Name: {{product.name}}</h3>
+    <p>Description: {{product.description}}</p>
+    <p>Price: {{product.price | currency:'INR'}}</p>
+</div>

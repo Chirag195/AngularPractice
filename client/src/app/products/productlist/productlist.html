@@ -1,0 +1,15 @@
+<div> 
+    @if(searchValue)
+    {
+        <p class="card-container">Looking at Results for {{searchValue}}</p>
+    }   
+    <div class="card-container">
+        @for(product of products; track product.id)
+        {
+            @if(product.name.toLowerCase().includes(searchValue.toLowerCase()))
+            {
+                <app-product [product]="product"></app-product>
+            }
+        }
+    </div>
+</div>
